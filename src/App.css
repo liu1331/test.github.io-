@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.ProductContent_items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+.ModalContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-around;
+}
+.ModalContent img{
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+.ModalContent__PriceInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ModalContent__info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.ModalContent__info img{
+    margin: 0 auto;
+}
+.ModalContent__PriceInfo__item{
+    margin: 15px;
+    display: flex;
+}
+.ModalContent__PriceInfo__item:last-child{
+    flex-direction: column;
+    align-items: center;
+    align-self:flex-start;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Order*/
+.Orders_item{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Orders_item__img img{
+    max-height: 200px;
+    width: 200px;
+
+}
+.Orders_item{
+    border: solid 1px #ffd6e2;
+    transition: 0.2s;
+}
+.Orders_item:hover{
+    border: solid 2px #cfffdf;
+}
+.Delete_Btn{
+    padding: 5px 5px;
+    border-radius:50%;
+    transition: box-shadow .3s;
+}
+.Delete_Btn:hover{
+    box-shadow: 0 0 15px rgb(255, 0, 0);
+}
+.Order_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Order_item__title{
+    text-align: center;
+    margin-right: auto;
+    margin: 2em 5em;;
+    font-size: large;
 }

@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import AppRouter from "./components/AppRouter/AppRouter";
+import Navbar from "./components/Navbar/Navbar";
+import { useActionCreators } from './hooks/useAC';
+import { IOrder } from './types/order';
 
 function App() {
+  const { setOrders, setTotalPrice } = useActionCreators()
+  useEffect(() => {
+    const orders = localStorage.getItem('orders') || '[]';
+    const totalPrice = localStorage.getItem('totalPrice') || '0';
+    const json = JSON.parse(orders) as IOrder[]
+    if (json.length>0) {
+      setOrders(json);
+      setTotalPrice(JSON.parse(totalPrice))
+    }
+
+
+  }, [])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <AppRouter />
     </div>
   );
 }
