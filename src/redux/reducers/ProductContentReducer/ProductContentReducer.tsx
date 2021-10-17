@@ -1,4 +1,5 @@
 import axios from "axios";
+import { DiscountName } from "../../../types/discounts";
 import { IProduct } from "../../../types/product";
 import { AppDispatch } from "../../store";
 import { IProductState, ProductAction, ProductActionName } from "./ProductType";
@@ -48,13 +49,13 @@ export const ProductActionCreactors ={
         const response = [
             {productName:"Банан",
                 img:"https://ambassador-city-jomtien.ru/uploads/posts/2014-06/1402862895_banana2.jpg",
-                price:10, inBasket:false},
+                price:10, inBasket:false, discount:''},
             {productName:"Яблоко",
                 img:"https://img3.zakaz.ua/upload.version_1.0.4f1f0c8dc6cf9362a789bf80d070ccf6.1350x1350.jpeg",
-                price:8, inBasket:false},
+                price:8, inBasket:false, discount:''},
             {productName:"Папайя",
                 img:"https://img3.zakaz.ua/src.1607469352.ad72436478c_2020-12-09_Aliona/src.1607469352.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.1350nowm.jpg.1350x.jpg",
-                price:10, inBasket:false}
+                price:10, inBasket:false, discount: DiscountName.ON_3_KG}
         ];
         dispatch(ProductActionCreactors.setProducts(response));
 

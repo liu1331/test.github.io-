@@ -5,12 +5,7 @@ import { IOrder } from '../../types/order'
 
 const Order: FC<IOrder> = (props) => {
 const {deleteOrderThunk} = useActionCreators()
-const { img,
-    productName,
-    price,
-    countValue,
-    totalPrice,
-    inBasket} = props
+const { img,productName,price,countValue,totalPrice,inBasket} = props
 
     return (
         <div className='Orders_item' >
@@ -21,15 +16,20 @@ const { img,
             <div className='Orders_item__title' style={{fontSize: '24px', fontWeight:'bold' }}>
                 {productName}
             </div>
+
             <div className='Orders_item__Price' style={{fontSize: '18px'}}>
                Цена ${price}
             </div>
 
             </div>
-
+            <div style={{fontSize: '22px' }}>
+                <h2 style={{color:'GrayText'}}>({countValue+' кг'})</h2>
+            </div>
             <div className='Orders_item__TotalPrice' style={{fontSize:'50px', fontWeight:'bolder'}}>
+
                 ${totalPrice}
             </div>
+
             <div className='Orders_item__deleteBtn'>
             <CloseOutlined onClick={()=> deleteOrderThunk({img,
     productName,

@@ -6,4 +6,5 @@ export interface IOrder{
      countValue: number;
      totalPrice: number;
      inBasket: boolean;
+     discount?:string
 }
