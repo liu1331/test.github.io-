@@ -10,11 +10,13 @@ export interface IRoute{
 }
 
 export enum RoutePath{
-    BASKET= '/basket',
-    PRODUCT_CONTENT='/productContent'
+    BASKET= '/testReact/basket',
+    PRODUCT_CONTENT='/testReact/productContent',
+
 }
 
 export const Routes:IRoute[] = [
+
     {path: RoutePath.BASKET, component: Basket, exact: true},
     {path: RoutePath.PRODUCT_CONTENT, component: ProductContent, exact: true}
 ]

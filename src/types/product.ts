@@ -4,5 +4,5 @@ export interface IProduct{
     price: number;
     img: string;
     inBasket: boolean;
-    totalPrice: number;
+    totalPrice?: number;
 }
