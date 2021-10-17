@@ -10,8 +10,8 @@ export interface IRoute{
 }
 
 export enum RoutePath{
-    BASKET= '/testReact/basket',
-    PRODUCT_CONTENT='/testReact/productContent',
+    BASKET= '/testReact/basket/index.html',
+    PRODUCT_CONTENT='/testReact/productContent/index.html'
 
 }
 
