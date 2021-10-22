@@ -1,13 +1,22 @@
 import { CloseOutlined } from '@ant-design/icons'
-import React, { FC } from 'react'
+import React, { FC} from 'react'
 import { useActionCreators } from '../../hooks/useAC'
+import { useChangeValue } from '../../hooks/useChangeValue'
 import { IOrder } from '../../types/order'
+import ChahgeValue from '../ChangeValue/ChahgeValue'
+
+
 
 const Order: FC<IOrder> = (props) => {
-const {deleteOrderThunk} = useActionCreators()
-const { img,productName,price,countValue,totalPrice,inBasket} = props
+const {deleteOrderThunk, changeValueOrder} = useActionCreators()
+const { img,productName,price,inBasket, countValue, totalPrice, discount} = props
+
+const {upValue, downValue} = useChangeValue({productName, countValue, totalPrice,discount, price} )
+
+
 
     return (
+
         <div className='Orders_item' >
             <div className='Orders_item__img'>
                 <img src={img} alt="" />
@@ -20,11 +29,10 @@ const { img,productName,price,countValue,totalPrice,inBasket} = props
             <div className='Orders_item__Price' style={{fontSize: '18px'}}>
                Цена ${price}
             </div>
+            </div>
+            <ChahgeValue countValue={countValue} upValue ={upValue} downValue={downValue} />
 
-            </div>
-            <div style={{fontSize: '22px' }}>
-                <h2 style={{color:'GrayText'}}>({countValue+' кг'})</h2>
-            </div>
+
             <div className='Orders_item__TotalPrice' style={{fontSize:'50px', fontWeight:'bolder'}}>
 
                 ${totalPrice}

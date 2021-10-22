@@ -16,7 +16,7 @@ const ProductContent: FC = () => {
   return (
     <div className='container' >
       <div className='ProductContent_items' style={{paddingTop:'20px'}} >
-        {products.map((product) => <ProductCard {...product} /> )}
+        {products.map((product) => <ProductCard key={product.productName} {...product} /> )}
       </div>
     </div>
   )

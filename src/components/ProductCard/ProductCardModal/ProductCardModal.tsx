@@ -22,7 +22,7 @@ const ProductCardModal: FC<IModal> = (props) => {
     const handleOk = () => {
         if (countValue === 0) return; //warn
         props.setIsModalVisible(false);
-        localStorageOrders({ img, productName, countValue, totalPrice, price, inBasket: true });
+        localStorageOrders({ img, productName, countValue, totalPrice, price, inBasket: true, discount});
         pushProduct({ productName, img, price, totalPrice, inBasket: true, discount })
 
     };

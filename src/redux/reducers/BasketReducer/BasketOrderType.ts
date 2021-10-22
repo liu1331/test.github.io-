@@ -8,7 +8,8 @@ export enum BasketActionName{
     SET_ORDER= "SET_ORDER",
     SET_ORDERS= "SET_ORDERS",
     SET_TOTAL_PRICE= "SET_TOTAL_PRICE",
-    REMOVE_ORDER= "REMOVE_ORDER"
+    REMOVE_ORDER= "REMOVE_ORDER",
+    CHANGE_ORDER_VALUE_ACTION= "CHANGE_ORDER_VALUE_ACTION",
 }
 
 export interface SetOrderAction{
@@ -25,8 +26,15 @@ export interface removeOrder{
 }
 export interface setTotalPrice{
     type: BasketActionName.SET_TOTAL_PRICE
+
+}
+export interface changeOrderValueAction{
+    type: BasketActionName.CHANGE_ORDER_VALUE_ACTION;
+    productName:string;
+    countValue: number;
     totalPrice: number
+
 }
 
 
-export type BasketActions = SetOrderAction | SetOrdersAction | removeOrder | setTotalPrice
+export type BasketActions = SetOrderAction | SetOrdersAction | removeOrder | setTotalPrice | changeOrderValueAction

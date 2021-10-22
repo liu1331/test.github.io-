@@ -6,17 +6,14 @@ import { useActionCreators } from './hooks/useAC';
 import { IOrder } from './types/order';
 
 function App() {
-  const { setOrders, setTotalPrice } = useActionCreators()
+  const { setOrders, setTotalPriceAction } = useActionCreators()
   useEffect(() => {
     const orders = localStorage.getItem('orders') || '[]';
-    const totalPrice = localStorage.getItem('totalPrice') || '0';
     const json = JSON.parse(orders) as IOrder[]
     if (json.length>0) {
       setOrders(json);
-      setTotalPrice(JSON.parse(totalPrice))
+      setTotalPriceAction()
     }
-
-
   }, [])
 
 

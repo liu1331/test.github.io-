@@ -1,5 +1,5 @@
 import { Button } from 'antd'
-import { FC} from 'react'
+import { FC, useEffect, useState} from 'react'
 import Order from '../components/Basket/Order'
 import { useActionCreators } from '../hooks/useAC'
 import { UseTypedSelector } from '../hooks/useTypedSelector'
@@ -9,10 +9,12 @@ import { UseTypedSelector } from '../hooks/useTypedSelector'
 
 const Basket: FC = () => {
     const { orders, totalPrice } = UseTypedSelector(state => state.Basket)
-    const { acceptOrders } = useActionCreators()
+    const { acceptOrders  } = useActionCreators()
     const accept = () => {
         acceptOrders()
     }
+
+
     const storage = localStorage.getItem('orders') || '[]';
     const json = JSON.parse(storage)
 
@@ -23,7 +25,7 @@ const Basket: FC = () => {
 
             <div className='Orders_flex'>
                 {orders.length > 0 ?
-                    orders.map((order) => <Order {...order} />)
+                    orders.map((order) => <Order key={order.productName}  {...order} />)
                     :
                     <div style={{width:'100%', height:'100%', textAlign:'center', paddingTop:'30%'}}><h1> У вас нету товаров в корзине:(</h1></div>
                 }

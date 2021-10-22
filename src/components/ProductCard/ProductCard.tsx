@@ -22,7 +22,6 @@ const ProductCard: FC<IProduct> = (props) => {
         })
         }
 
-        // console.log('PorductCard UseEffect')
     })
     const showModal = () => {
         setIsModalVisible(true);
