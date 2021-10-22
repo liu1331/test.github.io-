@@ -76,13 +76,13 @@ export const BasketActionCreators = {
     deleteOrderThunk: (order: IOrder) => (dispatch: AppDispatch) => {
         const orders = localStorage.getItem('orders') || '[]';
 
-        const json = JSON.parse(orders) as IOrder[];
-        for (let i = 0; i < json.length; i++) {
-            if (json[i].productName === order.productName) {
-                json.splice(i, 1);
+        const jsonOrders = JSON.parse(orders) as IOrder[];
+        for (let i = 0; i < jsonOrders.length; i++) {
+            if (jsonOrders[i].productName === order.productName) {
+                jsonOrders.splice(i, 1);
             }
         }
-        localStorage.setItem('orders', JSON.stringify(json))
+        localStorage.setItem('orders', JSON.stringify(jsonOrders))
         dispatch(BasketActionCreators.removeOrder(order))
         const totalPrice = localStorage.getItem('totalPrice') || '0';
         const jsonTotalPrice = JSON.parse(totalPrice);
@@ -90,8 +90,6 @@ export const BasketActionCreators = {
         dispatch(BasketActionCreators.setTotalPriceAction())
     },
     changeValueOrder:(productName:string, totalPrice:number, countValue:number)=>(dispatch: AppDispatch)=>{
-        // dispatch(BasketActionCreators.cahngeValueOrdeAction(productName, totalPrice, countValue))
-
         const orders = localStorage.getItem('orders') || '[]';
         const jsonOrders = JSON.parse(orders) as IOrder[];
         for (let i = 0; i < jsonOrders.length; i++) {
@@ -102,7 +100,6 @@ export const BasketActionCreators = {
         }
         localStorage.setItem('orders', JSON.stringify(jsonOrders))
         localStorage.setItem('totalPrice', JSON.stringify(jsonOrders.reduce(function(prev, curr) { return prev + curr.totalPrice},0)))
-        // dispatch(BasketActionCreators.setTotalPriceAction())
         dispatch(BasketActionCreators.setOrders(jsonOrders));
         dispatch( BasketActionCreators.setTotalPriceAction())
 

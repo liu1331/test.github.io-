@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useActionCreators } from "./useAC";
 import { withDiscount } from "./withDiscount";
 
@@ -23,11 +23,7 @@ export function useChangeValue(order:any) {
     const {changeValueOrder} = useActionCreators()
 
     useEffect(() => {
-
         changeValueOrder(productName, totalPriceInHook, countValueInHook)
-
-
-
     }, [countValueInHook])
 
     const upValue = () => {
@@ -54,11 +50,6 @@ export function useChangeValue(order:any) {
             setTotalPrice((totalPriceInHook) => totalPriceInHook = Number(totalPriceInHook) + Number(price))
 
         }
-
-
-
-
-
     }
     const downValue = () => {
         if (countValueInHook - 1 === 0) {
@@ -71,19 +62,14 @@ export function useChangeValue(order:any) {
 
             } else {
                 setTotalPrice((totalPriceInHook) => totalPriceInHook = Number(totalPriceInHook) - Number(price))
-
             }
         } else {
             setTotalPrice((totalPriceInHook) => totalPriceInHook = Number(totalPriceInHook) - Number(price))
         }
-
         setCountValue((Value) => Value - 1)
-
-
     }
 
     return {
         countValueInHook, setCountValue, totalPriceInHook, setTotalPrice, upValue, downValue
-
     }
 }
