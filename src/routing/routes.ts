@@ -1,13 +1,18 @@
-import Basket from "../pages/Basket";
-import ProductContent from "../pages/ProductContent";
+import React, { lazy,Suspense,ReactFragment,LazyExoticComponent } from "react";
+import { RouteProps } from "react-router-dom";
+// import Basket from "../pages/Basket";
+// import ProductContent from "../pages/ProductContent";
+const ProductContent = lazy(()=> import("../pages/ProductContent"))
+const Basket = lazy(()=> import("../pages/Basket"))
 
 
 
-export interface IRoute{
-    path: string;
-    component: React.ComponentType;
-    exact: boolean;
-}
+export interface RouteType {
+    path?: string | string[];
+    exact?: boolean;
+    component?:any;
+    themePath?: string;
+  }
 
 export enum RoutePath{
     BASKET= '/basket',
@@ -15,8 +20,12 @@ export enum RoutePath{
 
 }
 
-export const Routes:IRoute[] = [
-
+export const routes:RouteType[] = [
+  {
+    path: "/",
+    exact: true,
+    component: ProductContent,
+  },
     {path: RoutePath.BASKET, component: Basket, exact: true},
-    {path: RoutePath.PRODUCT_CONTENT, component: ProductContent, exact: true}
+    {path: RoutePath.PRODUCT_CONTENT, component: ProductContent, exact: true},
 ]

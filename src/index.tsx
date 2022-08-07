@@ -1,16 +1,16 @@
-import ReactDOM from 'react-dom';
-import App from './App';
-import {HashRouter} from "react-router-dom";
-import { Provider } from 'react-redux'
-import store from './redux/store';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-    <HashRouter basename={process.env.PUBLIC_URL}>
+  <Router>
     <Provider store={store}>
-    <App />
+      <App />
     </Provider>
-    </HashRouter>
-,
-  document.getElementById('root')
+  </Router>,
+
+  document.getElementById("root")
 );
