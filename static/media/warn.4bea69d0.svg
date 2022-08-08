@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>warn (1)</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Settings-2fa" transform="translate(-498.000000, -310.000000)">
+            <g id="Group-2" transform="translate(450.000000, 100.000000)">
+                <g id="Group-10" transform="translate(35.000000, 196.000000)">
+                    <g id="warn-(1)" transform="translate(13.000000, 14.000000)">
+                        <path d="M41,20.5 C41,25.954071 38.8826218,31.087204 35.0382461,34.9541016 C31.1960601,38.8178711 26.0813828,40.964653 20.6345063,40.9990616 C20.6210556,40.9990616 20.6063538,41 20.5929031,40.9990616 C20.562561,41 20.5312805,41 20.5,41 C15.024971,41 9.87682345,38.8682327 6.00492094,34.9957046 C2.13239286,31.124115 0,25.9756546 0,20.5 C0,15.0243454 2.13239286,9.87682345 6.00492094,6.00429537 C9.87682345,2.13239286 15.024971,0 20.5,0 C20.5312805,0 20.5616226,0 20.5929031,0.000938419531 C20.6072922,0.000938419531 20.6216812,0.000938419531 20.6360703,0.00156402187 C26.0823212,0.0369110508 31.1966858,2.18306734 35.0382461,6.04683687 C38.8826218,9.91373442 41,15.0465546 41,20.5 Z" id="Path" fill="#4835EA" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" fill="#FFFFFF" x="18" y="9" width="5" height="16" rx="2.5"></rect>
+                        <rect id="Rectangle-Copy" fill="#FFFFFF" x="18" y="27" width="5" height="5" rx="2.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

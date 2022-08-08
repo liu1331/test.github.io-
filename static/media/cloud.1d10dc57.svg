@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" data-bx-workspace="master" width="39" height="64" viewBox="0 0 39 64" fill="none">
+	<defs xmlns="http://www.w3.org/2000/svg">
+		<filter id="blur-filter-0" data-bx-preset="gaussian-blur 1 1.5" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%">
+			<bx-title>
+				Gaussian blur
+			</bx-title>
+			<feGaussianBlur stdDeviation="1.5 1.5" edgeMode="none">
+			</feGaussianBlur>
+		</filter>
+	</defs>
+	<path xmlns="http://www.w3.org/2000/svg" d="M6.99983 33.9999C6.67377 32.7584 6.3809 30.6787 6.99983 29.4999C7.61887 28.3198 9.90886 27.1871 10.9998 27.9999C5.32698 23.8532 6.98382 15.6907 13.4475 12.1927C17.9669 9.74672 23.9414 9.99361 28.9999 10.9999C28.9999 10.9999 38.5518 0.518478 37.9999 0.499861C29.079 0.198936 15.5273 2.86708 9.31492 8.74439C8.12009 9.87522 6.94471 11.1439 5.30872 11.6645C4.41855 11.9462 3.43475 11.9889 2.61017 12.4042C1.24908 13.0906 0.70032 14.5907 0.573768 15.9578C0.228772 19.6769 2.25966 23.4314 5.70969 25.4536C3.47223 28.0325 3.79638 31.628 4.71161 34.7017C8.15703 46.2817 17.9857 55.2614 27.8827 63.2723C23.4171 59.6578 20.5006 53.1467 16.3757 49.0464C12.0628 44.76 8.51904 39.7709 6.99983 33.9999Z" style="filter: url('#blur-filter-0');fill: #FFFAD7;">
+	</path>
+</svg>

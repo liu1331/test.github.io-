@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  background: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+  border-radius: 15px;
+}
+
+body {
+  overflow-y: scroll !important;
+  padding: 0 !important;
+}

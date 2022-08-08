@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414 75" width="414" height="75">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M0 0L414 0L414 1565L0 1565Z" />
+		</clipPath>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="30.515" y1="73.412" x2="30.515" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="65.435" y1="73.412" x2="65.435" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="100.983" y1="73.412" x2="100.983" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="135.588" y1="73.412" x2="135.588" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd5" gradientUnits="userSpaceOnUse"  x1="171.137" y1="73.412" x2="171.137" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd6" gradientUnits="userSpaceOnUse"  x1="206.685" y1="73.412" x2="206.685" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd7" gradientUnits="userSpaceOnUse"  x1="240.661" y1="73.412" x2="240.661" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd8" gradientUnits="userSpaceOnUse"  x1="276.21" y1="73.412" x2="276.21" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd9" gradientUnits="userSpaceOnUse"  x1="311.444" y1="73.412" x2="311.444" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd10" gradientUnits="userSpaceOnUse"  x1="346.678" y1="73.412" x2="346.678" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+		<linearGradient id="grd11" gradientUnits="userSpaceOnUse"  x1="381.597" y1="73.412" x2="381.597" y2="0.399">
+			<stop offset="0" stop-color="#35165d"  />
+			<stop offset="1" stop-color="#b78fff"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: url(#grd1);stroke-linecap:square } 
+		.shp1 { fill: none;stroke: url(#grd2);stroke-linecap:square } 
+		.shp2 { fill: none;stroke: url(#grd3);stroke-linecap:square } 
+		.shp3 { fill: none;stroke: url(#grd4);stroke-linecap:square } 
+		.shp4 { fill: none;stroke: url(#grd5);stroke-linecap:square } 
+		.shp5 { fill: none;stroke: url(#grd6);stroke-linecap:square } 
+		.shp6 { fill: none;stroke: url(#grd7);stroke-linecap:square } 
+		.shp7 { fill: none;stroke: url(#grd8);stroke-linecap:square } 
+		.shp8 { fill: none;stroke: url(#grd9);stroke-linecap:square } 
+		.shp9 { fill: none;stroke: url(#grd10);stroke-linecap:square } 
+		.shp10 { fill: none;stroke: url(#grd11);stroke-linecap:square } 
+	</style>
+	<g id="pasino-landing-mobile" clip-path="url(#cp1)">
+		<g id="gridlines-top" style="opacity: 0.635">
+			<path id="Line 2" class="shp0" d="M0 0.4L61.03 73.41" />
+			<path id="Line 2 Copy" class="shp1" d="M41.53 0.4L89.34 73.41" />
+			<path id="Line 2 Copy 2" class="shp2" d="M83.05 0.4L118.91 73.41" />
+			<path id="Line 2 Copy 3" class="shp3" d="M123.95 0.4L147.23 73.41" />
+			<path id="Line 2 Copy 4" class="shp4" d="M165.47 0.4L176.8 73.41" />
+			<path id="Line 2 Copy 5" class="shp5" d="M207.63 0.4L205.74 73.41" />
+			<path id="Line 2 Copy 6" class="shp6" d="M247.9 0.4L233.43 73.41" />
+			<path id="Line 2 Copy 7" class="shp7" d="M289.42 0.4L263 73.41" />
+			<path id="Line 2 Copy 8" class="shp8" d="M330.95 0.4L291.94 73.41" />
+			<path id="Line 2 Copy 9" class="shp9" d="M372.47 0.4L320.88 73.41" />
+			<path id="Line 2 Copy 10" class="shp10" d="M414 0.4L349.19 73.41" />
+		</g>
+	</g>
+</svg>

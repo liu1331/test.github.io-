@@ -1,0 +1,120 @@
+.canvasTextGilroy,
+.canvasTextVarela {
+  font-size: 5rem;
+  font-weight: normal;
+  width: max-content;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  line-height: 100%;
+}
+
+.canvasTextGilroy {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 900;
+  color: #00ffc6;
+
+  position: absolute;
+  top: 50%;
+
+  margin: 0;
+}
+
+.canvasTextVarela {
+  font-family: "VarelaRound", sans-serif;
+  color: #00e7ff;
+  transition: color 0.2s;
+  bottom: calc(50% - 5rem);
+
+  position: absolute;
+  margin: 0;
+}
+
+.canvasWhiteVarela {
+  color: #2d2b98;
+}
+
+.canvasVarelaError {
+  color: #dd5389 !important;
+}
+
+@media only screen and (max-width: 1350px) {
+  .canvasTextVarela {
+    font-size: 4rem;
+    bottom: calc(50% - 4rem);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .canvasTextVarela {
+    font-size: 3rem;
+    bottom: calc(50% - 3rem);
+  }
+
+  .canvasTextGilroy {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .canvasTextGilroy {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .canvasTextVarela {
+    font-size: 2.5rem;
+    bottom: calc(50% - 2.5rem);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .canvasTextGilroy {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .canvasTextVarela {
+    font-size: 2rem;
+    bottom: calc(50% - 2rem);
+  }
+}
+
+@keyframes textColor {
+  0% {
+    color: #9600ff;
+  }
+
+  18% {
+    color: #f154ff;
+  }
+  25% {
+    color: #9470ff;
+  }
+
+  35% {
+    color: #1795ff;
+  }
+
+  50% {
+    color: #1795ff;
+  }
+
+  70% {
+    color: #1795ff;
+  }
+
+  85% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: #ffffff;
+  }
+}
+
+.crashGameAnimation {
+  animation-duration: 180s;
+  animation-name: textColor;
+}
