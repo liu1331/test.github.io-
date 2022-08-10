@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/Chart/style.module.scss"],"names":[],"mappings":"AAAA,qBACE,WAAY,CACZ,YAAa","file":"98.cfddbe88.chunk.css","sourcesContent":[".canvas {\r\n  width: 620px;\r\n  height: 270px;\r\n}\r\n"]}
